@@ -1,0 +1,22 @@
+execute below on PS console:
+> mongod	-> starts mongo server (crtl to start)
+> mongo		-> opens mongo shell
+
+Inserting data in mongo on PS console
+# to view all DBs
+show dbs
+
+# creating DB
+use <db-name>
+
+# creating collection/table
+db.item.insertOne({name: "Jitendra Singh Tomar", technology:"Database", day:"9"})
+
+# to view the items
+db.items.find()
+
+# inserting multiple items
+db.item.insertMany([{name: "Tomar", technology:"XYZ"},{name: "Jeetu", technology:"Linux", day:"4"},{name: "Jitendra", technology:"Infra", day:"1"}])
+
+# inserting new item (with extra value)
+db.item.insertOne({name: "JSingh", technology:"Middleware", day:"10",IsTortureOver:"True"})
